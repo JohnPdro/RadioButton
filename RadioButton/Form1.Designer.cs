@@ -46,6 +46,12 @@ namespace RadioButton
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.lblMorango = new System.Windows.Forms.Label();
+            this.lblFramboesa = new System.Windows.Forms.Label();
+            this.lblTomate = new System.Windows.Forms.Label();
+            this.lblMaca = new System.Windows.Forms.Label();
+            this.lblKiwi = new System.Windows.Forms.Label();
+            this.lblLimao = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pctrFramboesa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrMorango)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrTomate)).BeginInit();
@@ -63,6 +69,7 @@ namespace RadioButton
             this.pctrFramboesa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrFramboesa.TabIndex = 1;
             this.pctrFramboesa.TabStop = false;
+            this.pctrFramboesa.Visible = false;
             // 
             // pctrMorango
             // 
@@ -73,6 +80,8 @@ namespace RadioButton
             this.pctrMorango.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrMorango.TabIndex = 0;
             this.pctrMorango.TabStop = false;
+            this.pctrMorango.Visible = false;
+            this.pctrMorango.Click += new System.EventHandler(this.pctrMorango_Click);
             // 
             // pctrTomate
             // 
@@ -83,6 +92,7 @@ namespace RadioButton
             this.pctrTomate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrTomate.TabIndex = 2;
             this.pctrTomate.TabStop = false;
+            this.pctrTomate.Visible = false;
             // 
             // pctrMacaVerde
             // 
@@ -93,6 +103,7 @@ namespace RadioButton
             this.pctrMacaVerde.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrMacaVerde.TabIndex = 3;
             this.pctrMacaVerde.TabStop = false;
+            this.pctrMacaVerde.Visible = false;
             // 
             // pctrKiwi
             // 
@@ -103,6 +114,7 @@ namespace RadioButton
             this.pctrKiwi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrKiwi.TabIndex = 4;
             this.pctrKiwi.TabStop = false;
+            this.pctrKiwi.Visible = false;
             // 
             // pctrLimao
             // 
@@ -113,6 +125,7 @@ namespace RadioButton
             this.pctrLimao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrLimao.TabIndex = 5;
             this.pctrLimao.TabStop = false;
+            this.pctrLimao.Visible = false;
             // 
             // radioButton1
             // 
@@ -125,9 +138,9 @@ namespace RadioButton
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(128, 19);
             this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Frutas Vermelhas";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -139,9 +152,9 @@ namespace RadioButton
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(107, 19);
             this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Frutas Verdes";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -154,9 +167,9 @@ namespace RadioButton
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(75, 19);
             this.radioButton3.TabIndex = 8;
-            this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Morango";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // radioButton4
             // 
@@ -169,9 +182,9 @@ namespace RadioButton
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(90, 19);
             this.radioButton4.TabIndex = 9;
-            this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Framboesa";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // radioButton5
             // 
@@ -184,9 +197,9 @@ namespace RadioButton
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(69, 19);
             this.radioButton5.TabIndex = 10;
-            this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Tomate";
             this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
             // radioButton6
             // 
@@ -198,9 +211,9 @@ namespace RadioButton
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(95, 19);
             this.radioButton6.TabIndex = 11;
-            this.radioButton6.TabStop = true;
             this.radioButton6.Text = "Maçã Verde";
             this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
             // 
             // radioButton7
             // 
@@ -212,9 +225,9 @@ namespace RadioButton
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(49, 19);
             this.radioButton7.TabIndex = 12;
-            this.radioButton7.TabStop = true;
             this.radioButton7.Text = "Kiwi";
             this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
             // radioButton8
             // 
@@ -226,13 +239,14 @@ namespace RadioButton
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(60, 19);
             this.radioButton8.TabIndex = 13;
-            this.radioButton8.TabStop = true;
             this.radioButton8.Text = "Limão";
             this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButton8.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
             // 
             // btnLimpar
             // 
             this.btnLimpar.BackColor = System.Drawing.Color.White;
+            this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpar.FlatAppearance.BorderSize = 0;
             this.btnLimpar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -243,10 +257,12 @@ namespace RadioButton
             this.btnLimpar.TabIndex = 14;
             this.btnLimpar.Text = "LIMPAR";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -257,6 +273,81 @@ namespace RadioButton
             this.button2.TabIndex = 15;
             this.button2.Text = "SAIR";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // lblMorango
+            // 
+            this.lblMorango.AutoSize = true;
+            this.lblMorango.Font = new System.Drawing.Font("SansSerif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.lblMorango.ForeColor = System.Drawing.Color.White;
+            this.lblMorango.Location = new System.Drawing.Point(289, 203);
+            this.lblMorango.Name = "lblMorango";
+            this.lblMorango.Size = new System.Drawing.Size(114, 15);
+            this.lblMorango.TabIndex = 16;
+            this.lblMorango.Text = "Bolo de Morango";
+            this.lblMorango.Visible = false;
+            this.lblMorango.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lblFramboesa
+            // 
+            this.lblFramboesa.AutoSize = true;
+            this.lblFramboesa.Font = new System.Drawing.Font("SansSerif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.lblFramboesa.ForeColor = System.Drawing.Color.White;
+            this.lblFramboesa.Location = new System.Drawing.Point(289, 425);
+            this.lblFramboesa.Name = "lblFramboesa";
+            this.lblFramboesa.Size = new System.Drawing.Size(131, 15);
+            this.lblFramboesa.TabIndex = 17;
+            this.lblFramboesa.Text = "Torta de Framboesa";
+            this.lblFramboesa.Visible = false;
+            // 
+            // lblTomate
+            // 
+            this.lblTomate.AutoSize = true;
+            this.lblTomate.Font = new System.Drawing.Font("SansSerif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.lblTomate.ForeColor = System.Drawing.Color.White;
+            this.lblTomate.Location = new System.Drawing.Point(289, 641);
+            this.lblTomate.Name = "lblTomate";
+            this.lblTomate.Size = new System.Drawing.Size(118, 15);
+            this.lblTomate.TabIndex = 18;
+            this.lblTomate.Text = "Salada de Tomate";
+            this.lblTomate.Visible = false;
+            // 
+            // lblMaca
+            // 
+            this.lblMaca.AutoSize = true;
+            this.lblMaca.Font = new System.Drawing.Font("SansSerif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.lblMaca.ForeColor = System.Drawing.Color.White;
+            this.lblMaca.Location = new System.Drawing.Point(706, 203);
+            this.lblMaca.Name = "lblMaca";
+            this.lblMaca.Size = new System.Drawing.Size(97, 15);
+            this.lblMaca.TabIndex = 19;
+            this.lblMaca.Text = "Maçã do Amor";
+            this.lblMaca.Visible = false;
+            // 
+            // lblKiwi
+            // 
+            this.lblKiwi.AutoSize = true;
+            this.lblKiwi.Font = new System.Drawing.Font("SansSerif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.lblKiwi.ForeColor = System.Drawing.Color.White;
+            this.lblKiwi.Location = new System.Drawing.Point(706, 425);
+            this.lblKiwi.Name = "lblKiwi";
+            this.lblKiwi.Size = new System.Drawing.Size(123, 15);
+            this.lblKiwi.TabIndex = 20;
+            this.lblKiwi.Text = "Kiwi Caramelizado";
+            this.lblKiwi.Visible = false;
+            this.lblKiwi.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // lblLimao
+            // 
+            this.lblLimao.AutoSize = true;
+            this.lblLimao.Font = new System.Drawing.Font("SansSerif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.lblLimao.ForeColor = System.Drawing.Color.White;
+            this.lblLimao.Location = new System.Drawing.Point(706, 641);
+            this.lblLimao.Name = "lblLimao";
+            this.lblLimao.Size = new System.Drawing.Size(101, 15);
+            this.lblLimao.TabIndex = 21;
+            this.lblLimao.Text = "Suco de Limão";
+            this.lblLimao.Visible = false;
             // 
             // Form1
             // 
@@ -264,6 +355,12 @@ namespace RadioButton
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(894, 792);
+            this.Controls.Add(this.lblLimao);
+            this.Controls.Add(this.lblKiwi);
+            this.Controls.Add(this.lblMaca);
+            this.Controls.Add(this.lblTomate);
+            this.Controls.Add(this.lblFramboesa);
+            this.Controls.Add(this.lblMorango);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.radioButton8);
@@ -282,6 +379,7 @@ namespace RadioButton
             this.Controls.Add(this.pctrMorango);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctrFramboesa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrMorango)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrTomate)).EndInit();
@@ -311,6 +409,12 @@ namespace RadioButton
         private System.Windows.Forms.RadioButton radioButton8;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lblMorango;
+        private System.Windows.Forms.Label lblFramboesa;
+        private System.Windows.Forms.Label lblTomate;
+        private System.Windows.Forms.Label lblMaca;
+        private System.Windows.Forms.Label lblKiwi;
+        private System.Windows.Forms.Label lblLimao;
     }
 }
 
